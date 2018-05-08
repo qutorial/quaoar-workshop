@@ -1,0 +1,6 @@
+1. Install beef
+2. Run WPScan to update DBs
+3. Get Files
+wget https://raw.githubusercontent.com/Hood3dRob1n/addicted2hash/master/dict/rockyou.txt
+wget https://raw.githubusercontent.com/qutorial/php-reverse-shell/master/php-reverse-shell.php
+4. Enjoy

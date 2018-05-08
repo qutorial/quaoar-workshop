@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1525812709" profile_name="Quick scan" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Tue May  8 15:51:49 2018" args="nmap -T4 -F 192.168.33.10"><scaninfo services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157" protocol="tcp" numservices="100" type="syn"></scaninfo><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-05-08 15:51 CDT
+Nmap scan report for rosalic.workshop.zaur (192.168.33.10)
+Host is up (0.00072s latency).
+Not shown: 91 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+53/tcp  open  domain
+80/tcp  open  http
+110/tcp open  pop3
+139/tcp open  netbios-ssn
+143/tcp open  imap
+445/tcp open  microsoft-ds
+993/tcp open  imaps
+995/tcp open  pop3s
+MAC Address: 52:54:00:BB:46:25 (QEMU virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.23 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="192.168.33.10"></address><address addrtype="mac" vendor="QEMU virtual NIC" addr="52:54:00:BB:46:25"></address><hostnames><hostname type="PTR" name="rosalic.workshop.zaur"></hostname></hostnames><ports><extraports count="91" state="closed"></extraports><port protocol="tcp" portid="22"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="ssh"></service></port><port protocol="tcp" portid="53"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="domain"></service></port><port protocol="tcp" portid="80"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="http"></service></port><port protocol="tcp" portid="110"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="pop3"></service></port><port protocol="tcp" portid="139"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="netbios-ssn"></service></port><port protocol="tcp" portid="143"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="imap"></service></port><port protocol="tcp" portid="445"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="microsoft-ds"></service></port><port protocol="tcp" portid="993"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="imaps"></service></port><port protocol="tcp" portid="995"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="pop3s"></service></port></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence></host><runstats><finished timestr="Tue May  8 15:51:50 2018" time="1525812710"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

@@ -1,0 +1,3 @@
+export KALI=192.168.222.25
+export TARGET=192.168.222.48
+
